@@ -1,76 +1,25 @@
-$karte_gruen: rgb(0, 226, 124);
+@use "mixin" as *;
+@use "regionen";
+//#####################################################################
+//                                                                    #
+//Farbe Festlegen von oben Hoferkasten und unten trenlinie            #
+//                                                                    #
+$karte_gruen: rgb(0, 226, 124);                                     //#
+//                                                                    #
+//sternbewertung Fülung über 1-5 und halbe sterne Zb mit 1.5 angeben  #
+//                                                                    #
+$sternbewertung: 1.5;                                               //#
+//                                                                    #
+//#####################################################################
 
-@mixin icon_sterne ($fill_farbe1, $fill_farbe2, $fill_farbe3, $fill_farbe4, $fill_farbe5)
-{
-  &--1
-  {
-  @if $fill_farbe1 == 0{
-      fill: none;
-  }
-  @else if $fill_farbe1 == 0.5{
-    fill:url(#halp_stern);
-  }
-  @else if $fill_farbe1 == 1{
-    fill:rgb(250, 255, 0);
-  }
-  }
-
-  &--2
-  {
-  @if $fill_farbe2 == 0{
-      fill: none;
-  }
-  @else if $fill_farbe2 == 0.5{
-    fill:url(#halp_stern);
-  }
-  @else if $fill_farbe2 == 1{
-    fill:rgb(250, 255, 0);
-  }
-  }
-  &--3
-  {
-  @if $fill_farbe3 == 0{
-      fill: none;
-  }
-  @else if $fill_farbe3 == 0.5{
-    fill:url(#halp_stern);
-  }
-  @else if $fill_farbe3 == 1{
-    fill:rgb(250, 255, 0);
-  }
-  }
-  &--4
-  {
-  @if $fill_farbe4 == 0{
-      fill: none;
-  }
-  @else if $fill_farbe4 == 0.5{
-    fill:url(#halp_stern);
-  }
-  @else if $fill_farbe4 == 1{
-    fill:rgb(250, 255, 0);
-  }
-  }
-  &--5
-  {
-  @if $fill_farbe5 == 0{
-      fill: none;
-  }
-  @else if $fill_farbe5 == 0.5{
-    fill:url(#halp_stern);
-  }
-  @else if $fill_farbe5 == 1{
-    fill:rgb(250, 255, 0);
-  }
-  }
-}
 
 .kart
 {
   position: relative;
   width: 20rem;
+  height: 31rem;
   overflow: hidden;
-  transition: width 1s ease-in-out;
+  transition: 1s ease-in-out;
   &__img
   {
     width: 100%;
@@ -93,17 +42,14 @@ $karte_gruen: rgb(0, 226, 124);
         font-weight: 800;
         font-size: 1.5em;
         transition: 0.5s ease-in-out;
-        content: "4.5";    // Die bewertung in der zahl angeben
     }
     &--svg
     {
       position: absolute;
       display: none;
     }
-    //
-    //Lehrer stern 0 ein halber stern 0.5 und komplet gelb 1
-    //
-    @include icon_sterne(1, 1, 1, 0.5, 0);
+
+    @include icon_sterne($sternbewertung);
   }
 }
 
@@ -132,17 +78,15 @@ $karte_gruen: rgb(0, 226, 124);
     margin-left: 2.5rem;
     display: block;
   }
-  //
-  //Lehrer stern 0 ein halber stern 0.5 und komplet gelb 1
-  //
-  @include icon_sterne(1, 1, 1, 0.5, 0);
+
+  @include icon_sterne($sternbewertung);
 }
 
 .karte__content
 {
   padding: 4rem 2rem 0rem 2rem;
   position: absolute;
-  bottom: 0.25rem;
+  bottom: 0rem;
   text-shadow: 0px 0px 3px rgb(64, 64, 64);
   background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
     &--titel
@@ -192,7 +136,9 @@ $karte_gruen: rgb(0, 226, 124);
 }
 .kart:hover{
   width: 22rem;
-  transition: width 1s ease-in-out;
+  height: 34rem;
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out;
   z-index: 999;
   & .kart__img
    {

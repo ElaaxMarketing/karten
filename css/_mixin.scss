@@ -1,0 +1,278 @@
+
+@mixin icon_sterne ($stern_velue){
+  @if $stern_velue == 0{
+    &::before{
+      content: "0.0";
+    }
+    &--1
+    {
+      fill: none;
+    }
+    &--2
+    {
+      fill: none;
+    }
+    &--3
+    {
+      fill: none;
+    }
+    &--4
+    {
+      fill: none;
+    }
+    &--5
+    {
+      fill: none;
+    }
+  }
+    @else if $stern_velue == 1{
+      &::before{
+        content: "1.0";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+          fill: none;
+      }
+      &--3
+      {
+          fill: none;
+      }
+      &--4
+      {
+          fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 0.5{
+      &::before{
+        content: "0.5";
+      }
+      &--1
+      {
+        fill:url(#halp_stern);
+      }
+      &--2
+      {
+        fill: none;
+      }
+      &--3
+      {
+          fill: none;
+      }
+      &--4
+      {
+          fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 2{
+      &::before{
+        content: "2.0";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+          fill: none;
+      }
+      &--4
+      {
+          fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 1.5{
+      &::before{
+        content: "1.5";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:url(#halp_stern);
+      }
+      &--3
+      {
+        fill: none;
+      }
+      &--4
+      {
+          fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 3{
+      &::before{
+        content: "3.0";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--4
+      {
+        fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 2.5{
+      &::before{
+        content: "2.5";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:url(#halp_stern);
+      }
+      &--4
+      {
+          fill: none;
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 4{
+      &::before{
+        content: "4.0";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--4
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--5
+      {
+          fill: none;
+      }
+    }
+    @else if $stern_velue == 3.5{
+      &::before{
+        content: "3.5";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--4
+      {
+        fill:url(#halp_stern);
+      }
+      &--5
+      {
+        fill: none;
+      }
+    }
+    @else if $stern_velue == 5{
+      &::before{
+        content: "5.0";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--4
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--5
+      {
+        fill:rgb(250, 255, 0);
+      }
+    }
+    @else if $stern_velue == 4.5{
+      &::before{
+        content: "4.5";
+      }
+      &--1
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--2
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--3
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--4
+      {
+        fill:rgb(250, 255, 0);
+      }
+      &--5
+      {
+      fill:url(#halp_stern);
+      }
+    }
+}
