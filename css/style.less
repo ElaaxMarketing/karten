@@ -1,0 +1,208 @@
+$karte_gruen: rgb(0, 226, 124);
+
+@mixin icon_sterne ($fill_farbe1, $fill_farbe2, $fill_farbe3, $fill_farbe4, $fill_farbe5)
+{
+  &--1
+  {
+  @if $fill_farbe1 == 0{
+      fill: none;
+  }
+  @else if $fill_farbe1 == 0.5{
+    fill:url(#halp_stern);
+  }
+  @else if $fill_farbe1 == 1{
+    fill:rgb(250, 255, 0);
+  }
+  }
+
+  &--2
+  {
+  @if $fill_farbe2 == 0{
+      fill: none;
+  }
+  @else if $fill_farbe2 == 0.5{
+    fill:url(#halp_stern);
+  }
+  @else if $fill_farbe2 == 1{
+    fill:rgb(250, 255, 0);
+  }
+  }
+  &--3
+  {
+  @if $fill_farbe3 == 0{
+      fill: none;
+  }
+  @else if $fill_farbe3 == 0.5{
+    fill:url(#halp_stern);
+  }
+  @else if $fill_farbe3 == 1{
+    fill:rgb(250, 255, 0);
+  }
+  }
+  &--4
+  {
+  @if $fill_farbe4 == 0{
+      fill: none;
+  }
+  @else if $fill_farbe4 == 0.5{
+    fill:url(#halp_stern);
+  }
+  @else if $fill_farbe4 == 1{
+    fill:rgb(250, 255, 0);
+  }
+  }
+  &--5
+  {
+  @if $fill_farbe5 == 0{
+      fill: none;
+  }
+  @else if $fill_farbe5 == 0.5{
+    fill:url(#halp_stern);
+  }
+  @else if $fill_farbe5 == 1{
+    fill:rgb(250, 255, 0);
+  }
+  }
+}
+
+.kart
+{
+  position: relative;
+  width: 20rem;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+  &__img
+  {
+    width: 100%;
+    transition: filter 1s ease-in-out;
+  }
+  &__icon
+  {
+    position: absolute;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: $karte_gruen;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    z-index: 2;
+    //
+      &::before{
+        display: block;
+        padding: 0.8em 0.6em 0.6em 0.6em;
+        font-weight: 800;
+        font-size: 1.5em;
+        transition: 0.5s ease-in-out;
+        content: "4.5";    // Die bewertung in der zahl angeben
+    }
+    &--svg
+    {
+      position: absolute;
+      display: none;
+    }
+    //
+    //Lehrer stern 0 ein halber stern 0.5 und komplet gelb 1
+    //
+    @include icon_sterne(1, 1, 1, 0.5, 0);
+  }
+}
+
+
+.kart:hover .kart__icon
+{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+  &::before{
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0.0
+  }
+  &--svg
+  {
+    position: absolute;
+    width: 15rem;
+    stroke: #000;
+    stroke-width: 0.03261;
+    fill-opacity: 0.75;
+    fill-rule: evenodd;
+    padding: 10px 5px 5px 5px;
+    margin-left: 2.5rem;
+    display: block;
+  }
+  //
+  //Lehrer stern 0 ein halber stern 0.5 und komplet gelb 1
+  //
+  @include icon_sterne(1, 1, 1, 0.5, 0);
+}
+
+.karte__content
+{
+  padding: 4rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0.25rem;
+  text-shadow: 0px 0px 3px rgb(64, 64, 64);
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+    &--titel
+    {
+      font-size: 1.4em;
+      color: #fff;
+      text-transform: uppercase;
+      bottom: 0.6rem;
+      position: relative;
+    }
+  &__ort
+  {
+    display: flex;
+    bottom: 0.5rem;
+    position: relative;
+    &--a
+    {
+      text-decoration: none;
+    }
+    &--p
+    {
+      text-decoration: none;
+      color: #fff;
+      padding-left: 0.5em;
+      line-height: 2em;
+      font-weight: 600;
+      position: absolute;
+    }
+
+    &--svg
+    {
+      width: 1.5rem;
+    }
+
+  }
+  &--text
+  {
+    height: 0em;
+    background-image: linear-gradient(90deg, $karte_gruen 60%, transparent 60%);
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: 100% 0.2rem;
+    color: #fff;
+    padding-top: 0.8em;
+    transition: height 1s ease-in-out;
+  }
+}
+.kart:hover{
+  width: 22rem;
+  transition: width 1s ease-in-out;
+  z-index: 999;
+  & .kart__img
+   {
+     filter:brightness(80%);
+     transition: filter 1s ease-in-out;
+   }
+& .karte__content--text
+{
+  padding-top: 0.2em;
+  height: 13em;
+  transition: height 1s ease-in-out;
+}
+}

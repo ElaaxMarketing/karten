@@ -1,3 +1,147 @@
+.kart {
+  position: relative;
+  width: 20rem;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+.kart__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+  content: "4.5";
+}
+.kart__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart__icon--1 {
+  fill: #faff00;
+}
+.kart__icon--2 {
+  fill: #faff00;
+}
+.kart__icon--3 {
+  fill: #faff00;
+}
+.kart__icon--4 {
+  fill: url(#halp_stern);
+}
+.kart__icon--5 {
+  fill: none;
+}
 
+.kart:hover .kart__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart:hover .kart__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart:hover .kart__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart:hover .kart__icon--1 {
+  fill: #faff00;
+}
+.kart:hover .kart__icon--2 {
+  fill: #faff00;
+}
+.kart:hover .kart__icon--3 {
+  fill: #faff00;
+}
+.kart:hover .kart__icon--4 {
+  fill: url(#halp_stern);
+}
+.kart:hover .kart__icon--5 {
+  fill: none;
+}
+
+.karte__content {
+  padding: 4rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0.25rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+}
+.karte__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte__content__ort--a {
+  text-decoration: none;
+}
+.karte__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte__content__ort--svg {
+  width: 1.5rem;
+}
+.karte__content--text {
+  height: 0em;
+  background-image: linear-gradient(90deg, #00e27c 60%, transparent 60%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 100% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: height 1s ease-in-out;
+}
+
+.kart:hover {
+  width: 22rem;
+  transition: width 1s ease-in-out;
+  z-index: 999;
+}
+.kart:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart:hover .karte__content--text {
+  padding-top: 0.2em;
+  height: 13em;
+  transition: height 1s ease-in-out;
+}
 
 /*# sourceMappingURL=master.css.map */
