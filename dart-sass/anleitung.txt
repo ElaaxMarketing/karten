@@ -1,0 +1,5 @@
+Damit man nicht jedes mal den kompletten pfad angeben muss
+
+nano ~/.bashrc
+
+und in die letzte Zeile
