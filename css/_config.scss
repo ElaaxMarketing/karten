@@ -1,0 +1,13 @@
+@use "mixin" as *;
+//############################################################################
+//                                                                           #
+//über das untenstehende @include könen folgende parameter übergeben werden  #
+//die karte die bewertung und die grind farbe                                #
+//für einen neue karte im html cod bitte das include kopiren                 #
+//(classen müssen kart_* heißen bitte imer nur einen vert einmal verwenden)  #
+//                 (class, wertung 0 bis 5 , farbe )                         #
+//@include karte_x (test, 1.5, rgb(0, 226, 124));                            #
+//############################################################################ 
+@include karte_x (test, 1.5, rgb(0, 226, 124));
+@include karte_x (test2, 2.5, rgb(0, 226, 124));
+@include karte_x (test3, 5, rgb(0, 226, 124));
