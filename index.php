@@ -7,7 +7,24 @@
   </head>
   <body>
 <div class="regionen">
-    <?php include 'karte.php'; ?>
+    <?php
+    $format = "0"; //bestimt ob Hochformat(0 oder "") oder Querformat(1)
+    $abteil = ""; //Sortirung um auf mehreren bereichen die karte nutzen zu können
+    include 'karte.php';
+    //reset nicht ändern
+    $format = "";
+    $abteil = "";
+    ?>
+
+<br />
+<?php
+$format = "1"; //bestimt ob Hochformat(0 oder "") oder Querformat(1)
+$abteil = ""; //Sortirung um auf mehreren bereichen die karte nutzen zu können
+include 'karte.php';
+//reset nicht ändern
+$format = "";
+$abteil = "";
+?>
 </div>
   </body>
 </html>
