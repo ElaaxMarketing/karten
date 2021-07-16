@@ -1,15 +1,17 @@
-.kart_test {
+.kart_sgut {
   position: relative;
   width: 20rem;
   height: 31rem;
   overflow: hidden;
   transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
 }
-.kart_test__img {
+.kart_sgut__img {
   width: 100%;
   transition: filter 1s ease-in-out;
 }
-.kart_test__icon {
+.kart_sgut__icon {
   position: absolute;
   width: 4.5em;
   height: 4.5em;
@@ -19,41 +21,41 @@
   box-shadow: 0px 0px 5px black;
   z-index: 2;
 }
-.kart_test__icon::before {
+.kart_sgut__icon::before {
   display: block;
   padding: 0.8em 0.6em 0.6em 0.6em;
   font-weight: 800;
   font-size: 1.5em;
   transition: 0.5s ease-in-out;
 }
-.kart_test__icon--svg {
+.kart_sgut__icon--svg {
   position: absolute;
   display: none;
 }
-.kart_test__icon::before {
-  content: "1.5";
+.kart_sgut__icon::before {
+  content: "5.0";
 }
-.kart_test__icon--1 {
+.kart_sgut__icon--1 {
   fill: #faff00;
 }
-.kart_test__icon--2 {
-  fill: url(#halp_stern);
+.kart_sgut__icon--2 {
+  fill: #faff00;
 }
-.kart_test__icon--3 {
-  fill: none;
+.kart_sgut__icon--3 {
+  fill: #faff00;
 }
-.kart_test__icon--4 {
-  fill: none;
+.kart_sgut__icon--4 {
+  fill: #faff00;
 }
-.kart_test__icon--5 {
-  fill: none;
+.kart_sgut__icon--5 {
+  fill: #faff00;
 }
 
-.kart_test:hover .kart_test__icon {
+.kart_sgut:hover .kart_sgut__icon {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
-.kart_test:hover .kart_test__icon::before {
+.kart_sgut:hover .kart_sgut__icon::before {
   position: absolute;
   padding: 0.6em;
   font-weight: 100;
@@ -61,7 +63,7 @@
   transition: 0.5s ease-in-out;
   opacity: 0;
 }
-.kart_test:hover .kart_test__icon--svg {
+.kart_sgut:hover .kart_sgut__icon--svg {
   position: absolute;
   width: 15rem;
   stroke: #000;
@@ -72,26 +74,26 @@
   margin-left: 2.5rem;
   display: block;
 }
-.kart_test:hover .kart_test__icon::before {
-  content: "1.5";
+.kart_sgut:hover .kart_sgut__icon::before {
+  content: "5.0";
 }
-.kart_test:hover .kart_test__icon--1 {
+.kart_sgut:hover .kart_sgut__icon--1 {
   fill: #faff00;
 }
-.kart_test:hover .kart_test__icon--2 {
-  fill: url(#halp_stern);
+.kart_sgut:hover .kart_sgut__icon--2 {
+  fill: #faff00;
 }
-.kart_test:hover .kart_test__icon--3 {
-  fill: none;
+.kart_sgut:hover .kart_sgut__icon--3 {
+  fill: #faff00;
 }
-.kart_test:hover .kart_test__icon--4 {
-  fill: none;
+.kart_sgut:hover .kart_sgut__icon--4 {
+  fill: #faff00;
 }
-.kart_test:hover .kart_test__icon--5 {
-  fill: none;
+.kart_sgut:hover .kart_sgut__icon--5 {
+  fill: #faff00;
 }
 
-.karte_test__content {
+.karte_sgut__content {
   padding: 2rem 2rem 0rem 2rem;
   position: absolute;
   bottom: 0rem;
@@ -100,22 +102,22 @@
   transform: translate(0, calc(100% - 8.5rem));
   transition: transform 1s ease-in-out;
 }
-.karte_test__content--titel {
+.karte_sgut__content--titel {
   font-size: 1.4em;
   color: #fff;
   text-transform: uppercase;
   bottom: 0.6rem;
   position: relative;
 }
-.karte_test__content__ort {
+.karte_sgut__content__ort {
   display: flex;
   bottom: 0.5rem;
   position: relative;
 }
-.karte_test__content__ort--a {
+.karte_sgut__content__ort--a {
   text-decoration: none;
 }
-.karte_test__content__ort--p {
+.karte_sgut__content__ort--p {
   text-decoration: none;
   color: #fff;
   padding-left: 0.5em;
@@ -123,10 +125,10 @@
   font-weight: 600;
   position: absolute;
 }
-.karte_test__content__ort--svg {
+.karte_sgut__content__ort--svg {
   width: 1.5rem;
 }
-.karte_test__content--text {
+.karte_sgut__content--text {
   background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
   background-position-y: top;
   background-repeat: no-repeat;
@@ -136,37 +138,39 @@
   transition: 1s ease-in-out;
 }
 
-.kart_test:hover {
+.kart_sgut:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px #000;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
   z-index: 999;
 }
-.kart_test:hover .kart__img {
+.kart_sgut:hover .kart__img {
   filter: brightness(80%);
   transition: filter 1s ease-in-out;
 }
-.kart_test:hover .karte_test__content {
+.kart_sgut:hover .karte_sgut__content {
   transform: translate(0, 0%);
   transition: transform 1s ease-in-out;
 }
-.kart_test:hover .karte_test__content--text {
+.kart_sgut:hover .karte_sgut__content--text {
   background-size: 100% 0.2rem;
   transition: 1s ease-in-out;
 }
 
-.kart_test2 {
+.kart_sgut5 {
   position: relative;
   width: 20rem;
   height: 31rem;
   overflow: hidden;
   transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
 }
-.kart_test2__img {
+.kart_sgut5__img {
   width: 100%;
   transition: filter 1s ease-in-out;
 }
-.kart_test2__icon {
+.kart_sgut5__icon {
   position: absolute;
   width: 4.5em;
   height: 4.5em;
@@ -176,41 +180,41 @@
   box-shadow: 0px 0px 5px black;
   z-index: 2;
 }
-.kart_test2__icon::before {
+.kart_sgut5__icon::before {
   display: block;
   padding: 0.8em 0.6em 0.6em 0.6em;
   font-weight: 800;
   font-size: 1.5em;
   transition: 0.5s ease-in-out;
 }
-.kart_test2__icon--svg {
+.kart_sgut5__icon--svg {
   position: absolute;
   display: none;
 }
-.kart_test2__icon::before {
-  content: "2.5";
+.kart_sgut5__icon::before {
+  content: "4.5";
 }
-.kart_test2__icon--1 {
+.kart_sgut5__icon--1 {
   fill: #faff00;
 }
-.kart_test2__icon--2 {
+.kart_sgut5__icon--2 {
   fill: #faff00;
 }
-.kart_test2__icon--3 {
+.kart_sgut5__icon--3 {
+  fill: #faff00;
+}
+.kart_sgut5__icon--4 {
+  fill: #faff00;
+}
+.kart_sgut5__icon--5 {
   fill: url(#halp_stern);
 }
-.kart_test2__icon--4 {
-  fill: none;
-}
-.kart_test2__icon--5 {
-  fill: none;
-}
 
-.kart_test2:hover .kart_test2__icon {
+.kart_sgut5:hover .kart_sgut5__icon {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
-.kart_test2:hover .kart_test2__icon::before {
+.kart_sgut5:hover .kart_sgut5__icon::before {
   position: absolute;
   padding: 0.6em;
   font-weight: 100;
@@ -218,7 +222,7 @@
   transition: 0.5s ease-in-out;
   opacity: 0;
 }
-.kart_test2:hover .kart_test2__icon--svg {
+.kart_sgut5:hover .kart_sgut5__icon--svg {
   position: absolute;
   width: 15rem;
   stroke: #000;
@@ -229,26 +233,26 @@
   margin-left: 2.5rem;
   display: block;
 }
-.kart_test2:hover .kart_test2__icon::before {
-  content: "2.5";
+.kart_sgut5:hover .kart_sgut5__icon::before {
+  content: "4.5";
 }
-.kart_test2:hover .kart_test2__icon--1 {
+.kart_sgut5:hover .kart_sgut5__icon--1 {
   fill: #faff00;
 }
-.kart_test2:hover .kart_test2__icon--2 {
+.kart_sgut5:hover .kart_sgut5__icon--2 {
   fill: #faff00;
 }
-.kart_test2:hover .kart_test2__icon--3 {
+.kart_sgut5:hover .kart_sgut5__icon--3 {
+  fill: #faff00;
+}
+.kart_sgut5:hover .kart_sgut5__icon--4 {
+  fill: #faff00;
+}
+.kart_sgut5:hover .kart_sgut5__icon--5 {
   fill: url(#halp_stern);
 }
-.kart_test2:hover .kart_test2__icon--4 {
-  fill: none;
-}
-.kart_test2:hover .kart_test2__icon--5 {
-  fill: none;
-}
 
-.karte_test2__content {
+.karte_sgut5__content {
   padding: 2rem 2rem 0rem 2rem;
   position: absolute;
   bottom: 0rem;
@@ -257,22 +261,22 @@
   transform: translate(0, calc(100% - 8.5rem));
   transition: transform 1s ease-in-out;
 }
-.karte_test2__content--titel {
+.karte_sgut5__content--titel {
   font-size: 1.4em;
   color: #fff;
   text-transform: uppercase;
   bottom: 0.6rem;
   position: relative;
 }
-.karte_test2__content__ort {
+.karte_sgut5__content__ort {
   display: flex;
   bottom: 0.5rem;
   position: relative;
 }
-.karte_test2__content__ort--a {
+.karte_sgut5__content__ort--a {
   text-decoration: none;
 }
-.karte_test2__content__ort--p {
+.karte_sgut5__content__ort--p {
   text-decoration: none;
   color: #fff;
   padding-left: 0.5em;
@@ -280,10 +284,10 @@
   font-weight: 600;
   position: absolute;
 }
-.karte_test2__content__ort--svg {
+.karte_sgut5__content__ort--svg {
   width: 1.5rem;
 }
-.karte_test2__content--text {
+.karte_sgut5__content--text {
   background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
   background-position-y: top;
   background-repeat: no-repeat;
@@ -293,37 +297,39 @@
   transition: 1s ease-in-out;
 }
 
-.kart_test2:hover {
+.kart_sgut5:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px #000;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
   z-index: 999;
 }
-.kart_test2:hover .kart__img {
+.kart_sgut5:hover .kart__img {
   filter: brightness(80%);
   transition: filter 1s ease-in-out;
 }
-.kart_test2:hover .karte_test2__content {
+.kart_sgut5:hover .karte_sgut5__content {
   transform: translate(0, 0%);
   transition: transform 1s ease-in-out;
 }
-.kart_test2:hover .karte_test2__content--text {
+.kart_sgut5:hover .karte_sgut5__content--text {
   background-size: 100% 0.2rem;
   transition: 1s ease-in-out;
 }
 
-.kart_test3 {
+.kart_bef {
   position: relative;
   width: 20rem;
   height: 31rem;
   overflow: hidden;
   transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
 }
-.kart_test3__img {
+.kart_bef__img {
   width: 100%;
   transition: filter 1s ease-in-out;
 }
-.kart_test3__icon {
+.kart_bef__icon {
   position: absolute;
   width: 4.5em;
   height: 4.5em;
@@ -333,41 +339,41 @@
   box-shadow: 0px 0px 5px black;
   z-index: 2;
 }
-.kart_test3__icon::before {
+.kart_bef__icon::before {
   display: block;
   padding: 0.8em 0.6em 0.6em 0.6em;
   font-weight: 800;
   font-size: 1.5em;
   transition: 0.5s ease-in-out;
 }
-.kart_test3__icon--svg {
+.kart_bef__icon--svg {
   position: absolute;
   display: none;
 }
-.kart_test3__icon::before {
-  content: "5.0";
+.kart_bef__icon::before {
+  content: "4.0";
 }
-.kart_test3__icon--1 {
+.kart_bef__icon--1 {
   fill: #faff00;
 }
-.kart_test3__icon--2 {
+.kart_bef__icon--2 {
   fill: #faff00;
 }
-.kart_test3__icon--3 {
+.kart_bef__icon--3 {
   fill: #faff00;
 }
-.kart_test3__icon--4 {
+.kart_bef__icon--4 {
   fill: #faff00;
 }
-.kart_test3__icon--5 {
-  fill: #faff00;
+.kart_bef__icon--5 {
+  fill: none;
 }
 
-.kart_test3:hover .kart_test3__icon {
+.kart_bef:hover .kart_bef__icon {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
-.kart_test3:hover .kart_test3__icon::before {
+.kart_bef:hover .kart_bef__icon::before {
   position: absolute;
   padding: 0.6em;
   font-weight: 100;
@@ -375,7 +381,7 @@
   transition: 0.5s ease-in-out;
   opacity: 0;
 }
-.kart_test3:hover .kart_test3__icon--svg {
+.kart_bef:hover .kart_bef__icon--svg {
   position: absolute;
   width: 15rem;
   stroke: #000;
@@ -386,26 +392,26 @@
   margin-left: 2.5rem;
   display: block;
 }
-.kart_test3:hover .kart_test3__icon::before {
-  content: "5.0";
+.kart_bef:hover .kart_bef__icon::before {
+  content: "4.0";
 }
-.kart_test3:hover .kart_test3__icon--1 {
+.kart_bef:hover .kart_bef__icon--1 {
   fill: #faff00;
 }
-.kart_test3:hover .kart_test3__icon--2 {
+.kart_bef:hover .kart_bef__icon--2 {
   fill: #faff00;
 }
-.kart_test3:hover .kart_test3__icon--3 {
+.kart_bef:hover .kart_bef__icon--3 {
   fill: #faff00;
 }
-.kart_test3:hover .kart_test3__icon--4 {
+.kart_bef:hover .kart_bef__icon--4 {
   fill: #faff00;
 }
-.kart_test3:hover .kart_test3__icon--5 {
-  fill: #faff00;
+.kart_bef:hover .kart_bef__icon--5 {
+  fill: none;
 }
 
-.karte_test3__content {
+.karte_bef__content {
   padding: 2rem 2rem 0rem 2rem;
   position: absolute;
   bottom: 0rem;
@@ -414,22 +420,22 @@
   transform: translate(0, calc(100% - 8.5rem));
   transition: transform 1s ease-in-out;
 }
-.karte_test3__content--titel {
+.karte_bef__content--titel {
   font-size: 1.4em;
   color: #fff;
   text-transform: uppercase;
   bottom: 0.6rem;
   position: relative;
 }
-.karte_test3__content__ort {
+.karte_bef__content__ort {
   display: flex;
   bottom: 0.5rem;
   position: relative;
 }
-.karte_test3__content__ort--a {
+.karte_bef__content__ort--a {
   text-decoration: none;
 }
-.karte_test3__content__ort--p {
+.karte_bef__content__ort--p {
   text-decoration: none;
   color: #fff;
   padding-left: 0.5em;
@@ -437,10 +443,10 @@
   font-weight: 600;
   position: absolute;
 }
-.karte_test3__content__ort--svg {
+.karte_bef__content__ort--svg {
   width: 1.5rem;
 }
-.karte_test3__content--text {
+.karte_bef__content--text {
   background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
   background-position-y: top;
   background-repeat: no-repeat;
@@ -450,21 +456,1293 @@
   transition: 1s ease-in-out;
 }
 
-.kart_test3:hover {
+.kart_bef:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px #000;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
   z-index: 999;
 }
-.kart_test3:hover .kart__img {
+.kart_bef:hover .kart__img {
   filter: brightness(80%);
   transition: filter 1s ease-in-out;
 }
-.kart_test3:hover .karte_test3__content {
+.kart_bef:hover .karte_bef__content {
   transform: translate(0, 0%);
   transition: transform 1s ease-in-out;
 }
-.kart_test3:hover .karte_test3__content--text {
+.kart_bef:hover .karte_bef__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef5 {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_bef5__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_bef5__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_bef5__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_bef5__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_bef5__icon::before {
+  content: "3.5";
+}
+.kart_bef5__icon--1 {
+  fill: #faff00;
+}
+.kart_bef5__icon--2 {
+  fill: #faff00;
+}
+.kart_bef5__icon--3 {
+  fill: #faff00;
+}
+.kart_bef5__icon--4 {
+  fill: url(#halp_stern);
+}
+.kart_bef5__icon--5 {
+  fill: none;
+}
+
+.kart_bef5:hover .kart_bef5__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_bef5:hover .kart_bef5__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_bef5:hover .kart_bef5__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_bef5:hover .kart_bef5__icon::before {
+  content: "3.5";
+}
+.kart_bef5:hover .kart_bef5__icon--1 {
+  fill: #faff00;
+}
+.kart_bef5:hover .kart_bef5__icon--2 {
+  fill: #faff00;
+}
+.kart_bef5:hover .kart_bef5__icon--3 {
+  fill: #faff00;
+}
+.kart_bef5:hover .kart_bef5__icon--4 {
+  fill: url(#halp_stern);
+}
+.kart_bef5:hover .kart_bef5__icon--5 {
+  fill: none;
+}
+
+.karte_bef5__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_bef5__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_bef5__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_bef5__content__ort--a {
+  text-decoration: none;
+}
+.karte_bef5__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_bef5__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_bef5__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef5:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_bef5:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_bef5:hover .karte_bef5__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_bef5:hover .karte_bef5__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_ausr {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_ausr__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_ausr__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_ausr__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_ausr__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_ausr__icon::before {
+  content: "3.0";
+}
+.kart_ausr__icon--1 {
+  fill: #faff00;
+}
+.kart_ausr__icon--2 {
+  fill: #faff00;
+}
+.kart_ausr__icon--3 {
+  fill: #faff00;
+}
+.kart_ausr__icon--4 {
+  fill: none;
+}
+.kart_ausr__icon--5 {
+  fill: none;
+}
+
+.kart_ausr:hover .kart_ausr__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_ausr:hover .kart_ausr__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_ausr:hover .kart_ausr__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_ausr:hover .kart_ausr__icon::before {
+  content: "3.0";
+}
+.kart_ausr:hover .kart_ausr__icon--1 {
+  fill: #faff00;
+}
+.kart_ausr:hover .kart_ausr__icon--2 {
+  fill: #faff00;
+}
+.kart_ausr:hover .kart_ausr__icon--3 {
+  fill: #faff00;
+}
+.kart_ausr:hover .kart_ausr__icon--4 {
+  fill: none;
+}
+.kart_ausr:hover .kart_ausr__icon--5 {
+  fill: none;
+}
+
+.karte_ausr__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_ausr__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_ausr__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_ausr__content__ort--a {
+  text-decoration: none;
+}
+.karte_ausr__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_ausr__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_ausr__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_ausr:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_ausr:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_ausr:hover .karte_ausr__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_ausr:hover .karte_ausr__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_ausr5 {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_ausr5__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_ausr5__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_ausr5__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_ausr5__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_ausr5__icon::before {
+  content: "2.5";
+}
+.kart_ausr5__icon--1 {
+  fill: #faff00;
+}
+.kart_ausr5__icon--2 {
+  fill: #faff00;
+}
+.kart_ausr5__icon--3 {
+  fill: url(#halp_stern);
+}
+.kart_ausr5__icon--4 {
+  fill: none;
+}
+.kart_ausr5__icon--5 {
+  fill: none;
+}
+
+.kart_ausr5:hover .kart_ausr5__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_ausr5:hover .kart_ausr5__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_ausr5:hover .kart_ausr5__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_ausr5:hover .kart_ausr5__icon::before {
+  content: "2.5";
+}
+.kart_ausr5:hover .kart_ausr5__icon--1 {
+  fill: #faff00;
+}
+.kart_ausr5:hover .kart_ausr5__icon--2 {
+  fill: #faff00;
+}
+.kart_ausr5:hover .kart_ausr5__icon--3 {
+  fill: url(#halp_stern);
+}
+.kart_ausr5:hover .kart_ausr5__icon--4 {
+  fill: none;
+}
+.kart_ausr5:hover .kart_ausr5__icon--5 {
+  fill: none;
+}
+
+.karte_ausr5__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_ausr5__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_ausr5__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_ausr5__content__ort--a {
+  text-decoration: none;
+}
+.karte_ausr5__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_ausr5__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_ausr5__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_ausr5:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_ausr5:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_ausr5:hover .karte_ausr5__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_ausr5:hover .karte_ausr5__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_bef__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_bef__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_bef__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_bef__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_bef__icon::before {
+  content: "2.0";
+}
+.kart_bef__icon--1 {
+  fill: #faff00;
+}
+.kart_bef__icon--2 {
+  fill: #faff00;
+}
+.kart_bef__icon--3 {
+  fill: none;
+}
+.kart_bef__icon--4 {
+  fill: none;
+}
+.kart_bef__icon--5 {
+  fill: none;
+}
+
+.kart_bef:hover .kart_bef__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_bef:hover .kart_bef__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_bef:hover .kart_bef__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_bef:hover .kart_bef__icon::before {
+  content: "2.0";
+}
+.kart_bef:hover .kart_bef__icon--1 {
+  fill: #faff00;
+}
+.kart_bef:hover .kart_bef__icon--2 {
+  fill: #faff00;
+}
+.kart_bef:hover .kart_bef__icon--3 {
+  fill: none;
+}
+.kart_bef:hover .kart_bef__icon--4 {
+  fill: none;
+}
+.kart_bef:hover .kart_bef__icon--5 {
+  fill: none;
+}
+
+.karte_bef__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_bef__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_bef__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_bef__content__ort--a {
+  text-decoration: none;
+}
+.karte_bef__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_bef__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_bef__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_bef:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_bef:hover .karte_bef__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_bef:hover .karte_bef__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef5 {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_bef5__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_bef5__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_bef5__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_bef5__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_bef5__icon::before {
+  content: "1.5";
+}
+.kart_bef5__icon--1 {
+  fill: #faff00;
+}
+.kart_bef5__icon--2 {
+  fill: url(#halp_stern);
+}
+.kart_bef5__icon--3 {
+  fill: none;
+}
+.kart_bef5__icon--4 {
+  fill: none;
+}
+.kart_bef5__icon--5 {
+  fill: none;
+}
+
+.kart_bef5:hover .kart_bef5__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_bef5:hover .kart_bef5__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_bef5:hover .kart_bef5__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_bef5:hover .kart_bef5__icon::before {
+  content: "1.5";
+}
+.kart_bef5:hover .kart_bef5__icon--1 {
+  fill: #faff00;
+}
+.kart_bef5:hover .kart_bef5__icon--2 {
+  fill: url(#halp_stern);
+}
+.kart_bef5:hover .kart_bef5__icon--3 {
+  fill: none;
+}
+.kart_bef5:hover .kart_bef5__icon--4 {
+  fill: none;
+}
+.kart_bef5:hover .kart_bef5__icon--5 {
+  fill: none;
+}
+
+.karte_bef5__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_bef5__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_bef5__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_bef5__content__ort--a {
+  text-decoration: none;
+}
+.karte_bef5__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_bef5__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_bef5__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_bef5:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_bef5:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_bef5:hover .karte_bef5__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_bef5:hover .karte_bef5__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_nausr {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_nausr__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_nausr__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_nausr__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_nausr__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_nausr__icon::before {
+  content: "1.0";
+}
+.kart_nausr__icon--1 {
+  fill: #faff00;
+}
+.kart_nausr__icon--2 {
+  fill: none;
+}
+.kart_nausr__icon--3 {
+  fill: none;
+}
+.kart_nausr__icon--4 {
+  fill: none;
+}
+.kart_nausr__icon--5 {
+  fill: none;
+}
+
+.kart_nausr:hover .kart_nausr__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_nausr:hover .kart_nausr__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_nausr:hover .kart_nausr__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_nausr:hover .kart_nausr__icon::before {
+  content: "1.0";
+}
+.kart_nausr:hover .kart_nausr__icon--1 {
+  fill: #faff00;
+}
+.kart_nausr:hover .kart_nausr__icon--2 {
+  fill: none;
+}
+.kart_nausr:hover .kart_nausr__icon--3 {
+  fill: none;
+}
+.kart_nausr:hover .kart_nausr__icon--4 {
+  fill: none;
+}
+.kart_nausr:hover .kart_nausr__icon--5 {
+  fill: none;
+}
+
+.karte_nausr__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_nausr__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_nausr__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_nausr__content__ort--a {
+  text-decoration: none;
+}
+.karte_nausr__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_nausr__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_nausr__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_nausr:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_nausr:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_nausr:hover .karte_nausr__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_nausr:hover .karte_nausr__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_nausr5 {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_nausr5__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_nausr5__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_nausr5__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_nausr5__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_nausr5__icon::before {
+  content: "0.5";
+}
+.kart_nausr5__icon--1 {
+  fill: url(#halp_stern);
+}
+.kart_nausr5__icon--2 {
+  fill: none;
+}
+.kart_nausr5__icon--3 {
+  fill: none;
+}
+.kart_nausr5__icon--4 {
+  fill: none;
+}
+.kart_nausr5__icon--5 {
+  fill: none;
+}
+
+.kart_nausr5:hover .kart_nausr5__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_nausr5:hover .kart_nausr5__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_nausr5:hover .kart_nausr5__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_nausr5:hover .kart_nausr5__icon::before {
+  content: "0.5";
+}
+.kart_nausr5:hover .kart_nausr5__icon--1 {
+  fill: url(#halp_stern);
+}
+.kart_nausr5:hover .kart_nausr5__icon--2 {
+  fill: none;
+}
+.kart_nausr5:hover .kart_nausr5__icon--3 {
+  fill: none;
+}
+.kart_nausr5:hover .kart_nausr5__icon--4 {
+  fill: none;
+}
+.kart_nausr5:hover .kart_nausr5__icon--5 {
+  fill: none;
+}
+
+.karte_nausr5__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_nausr5__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_nausr5__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_nausr5__content__ort--a {
+  text-decoration: none;
+}
+.karte_nausr5__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_nausr5__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_nausr5__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_nausr5:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_nausr5:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_nausr5:hover .karte_nausr5__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_nausr5:hover .karte_nausr5__content--text {
+  background-size: 100% 0.2rem;
+  transition: 1s ease-in-out;
+}
+
+.kart_scheisse {
+  position: relative;
+  width: 20rem;
+  height: 31rem;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 1;
+}
+.kart_scheisse__img {
+  width: 100%;
+  transition: filter 1s ease-in-out;
+}
+.kart_scheisse__icon {
+  position: absolute;
+  width: 4.5em;
+  height: 4.5em;
+  background-color: #00e27c;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0px 0px 5px black;
+  z-index: 2;
+}
+.kart_scheisse__icon::before {
+  display: block;
+  padding: 0.8em 0.6em 0.6em 0.6em;
+  font-weight: 800;
+  font-size: 1.5em;
+  transition: 0.5s ease-in-out;
+}
+.kart_scheisse__icon--svg {
+  position: absolute;
+  display: none;
+}
+.kart_scheisse__icon::before {
+  content: "0.0";
+}
+.kart_scheisse__icon--1 {
+  fill: none;
+}
+.kart_scheisse__icon--2 {
+  fill: none;
+}
+.kart_scheisse__icon--3 {
+  fill: none;
+}
+.kart_scheisse__icon--4 {
+  fill: none;
+}
+.kart_scheisse__icon--5 {
+  fill: none;
+}
+
+.kart_scheisse:hover .kart_scheisse__icon {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+.kart_scheisse:hover .kart_scheisse__icon::before {
+  position: absolute;
+  padding: 0.6em;
+  font-weight: 100;
+  font-size: 0.5rem;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+.kart_scheisse:hover .kart_scheisse__icon--svg {
+  position: absolute;
+  width: 15rem;
+  stroke: #000;
+  stroke-width: 0.03261;
+  fill-opacity: 0.75;
+  fill-rule: evenodd;
+  padding: 10px 5px 5px 5px;
+  margin-left: 2.5rem;
+  display: block;
+}
+.kart_scheisse:hover .kart_scheisse__icon::before {
+  content: "0.0";
+}
+.kart_scheisse:hover .kart_scheisse__icon--1 {
+  fill: none;
+}
+.kart_scheisse:hover .kart_scheisse__icon--2 {
+  fill: none;
+}
+.kart_scheisse:hover .kart_scheisse__icon--3 {
+  fill: none;
+}
+.kart_scheisse:hover .kart_scheisse__icon--4 {
+  fill: none;
+}
+.kart_scheisse:hover .kart_scheisse__icon--5 {
+  fill: none;
+}
+
+.karte_scheisse__content {
+  padding: 2rem 2rem 0rem 2rem;
+  position: absolute;
+  bottom: 0rem;
+  text-shadow: 0px 0px 3px #404040;
+  background-image: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.39) 60%);
+  transform: translate(0, calc(100% - 8.5rem));
+  transition: transform 1s ease-in-out;
+}
+.karte_scheisse__content--titel {
+  font-size: 1.4em;
+  color: #fff;
+  text-transform: uppercase;
+  bottom: 0.6rem;
+  position: relative;
+}
+.karte_scheisse__content__ort {
+  display: flex;
+  bottom: 0.5rem;
+  position: relative;
+}
+.karte_scheisse__content__ort--a {
+  text-decoration: none;
+}
+.karte_scheisse__content__ort--p {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 0.5em;
+  line-height: 2em;
+  font-weight: 600;
+  position: absolute;
+}
+.karte_scheisse__content__ort--svg {
+  width: 1.5rem;
+}
+.karte_scheisse__content--text {
+  background-image: linear-gradient(90deg, #00e27c 80%, transparent 80%);
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 30% 0.2rem;
+  color: #fff;
+  padding-top: 0.8em;
+  transition: 1s ease-in-out;
+}
+
+.kart_scheisse:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #000;
+  transition: 1s ease-in-out, z-index 1s;
+  z-index: 999;
+}
+.kart_scheisse:hover .kart__img {
+  filter: brightness(80%);
+  transition: filter 1s ease-in-out;
+}
+.kart_scheisse:hover .karte_scheisse__content {
+  transform: translate(0, 0%);
+  transition: transform 1s ease-in-out;
+}
+.kart_scheisse:hover .karte_scheisse__content--text {
   background-size: 100% 0.2rem;
   transition: 1s ease-in-out;
 }

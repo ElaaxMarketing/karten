@@ -1,7 +1,7 @@
 <?php
 $feld = file("kartendaten.csv");
 $zeil = 0;
-  foreach($feld as $zeil)
+  foreach($feld as $zeile)
   {
 
     $i = explode(",", $zeile);
@@ -13,6 +13,14 @@ $zeil = 0;
     $beschreibung = $i[4];
     $bild = $i[5];
     $alt = $i[6];
+
+    if ($zeil == 0)
+    {
+      $zeil++;
+    }
+    else {
+
+
  ?>
 
 <div class="kart_<?php echo $karte;?>">
@@ -56,7 +64,6 @@ $zeil = 0;
   </div>
 </div>
 <?php
-$zeil++
 }
-
+}
 ?>

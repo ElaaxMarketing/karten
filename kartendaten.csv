@@ -1,2 +1,5 @@
-Karte,Überschrift,ort,Ortlink,beschreibung,bild (pfart),alt
-test,testh1,OrtTest,elaax.de,Das ist der test text für die beschreibung ,testbild.jpg,tes
+Bewertung,Überschrift,ort,Ortlink,beschreibung,bild (pfart),alt
+sgut,Das IST SASS UND PHP,elaax,elaax.de,Diese Karte ist entwickelt worden bei Elaax mit Html PHP und Scss (Sass),testbild.jpg,Karte Elaax
+sgut5,test1,x,elaax.de,Diese Karte ist entwickelt worden bei Elaax mit Html PHP und Scss (Sass),tesla.jpeg,tesla
+bef,test2,y,elaax.de,Diese Karte ist entwickelt worden bei Elaax mit Html PHP und Scss (Sass),Spindel-shop-24-mobil.jpg,test
+bef5,test3,z,elaax.de,Diese Karte ist entwickelt worden bei Elaax mit Html PHP und Scss (Sass),testbild.jpg,Karte Elaax

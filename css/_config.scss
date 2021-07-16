@@ -7,7 +7,15 @@
 //(classen müssen kart_* heißen bitte imer nur einen vert einmal verwenden)  #
 //                 (class, wertung 0 bis 5 , farbe )                         #
 //@include karte_x (test, 1.5, rgb(0, 226, 124));                            #
-//############################################################################ 
-@include karte_x (test, 1.5, rgb(0, 226, 124));
-@include karte_x (test2, 2.5, rgb(0, 226, 124));
-@include karte_x (test3, 5, rgb(0, 226, 124));
+//############################################################################
+@include karte_x (sgut, 5, rgb(0, 226, 124));
+@include karte_x (sgut5, 4.5, rgb(0, 226, 124));
+@include karte_x (bef, 4, rgb(0, 226, 124));
+@include karte_x (bef5, 3.5, rgb(0, 226, 124));
+@include karte_x (ausr, 3, rgb(0, 226, 124));
+@include karte_x (ausr5, 2.5, rgb(0, 226, 124));
+@include karte_x (bef, 2, rgb(0, 226, 124));
+@include karte_x (bef5, 1.5, rgb(0, 226, 124));
+@include karte_x (nausr, 1, rgb(0, 226, 124));
+@include karte_x (nausr5, 0.5, rgb(0, 226, 124));
+@include karte_x (scheisse, 0.0, rgb(0, 226, 124));
