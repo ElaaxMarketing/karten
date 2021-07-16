@@ -1,8 +1,16 @@
 .regionen
 {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 body
 {
   padding: 50px;
+}
+.halbstern
+{
+  height: 0px;
+  width: 0px;
+  
 }
