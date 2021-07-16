@@ -22,12 +22,17 @@ $zeil = 0;
     $beschreibung = $i[4];
     $bild = $i[5];
     $alt = $i[6];
-
+    $abt = $i[7];
     if ($zeil == 0)
     {
       $zeil++;
     }
     else {
+
+if ($abteil == $abt)
+{
+
+
 if ($format == 0 or $format == "")
 {
 
@@ -114,6 +119,7 @@ if ($format == 1)
   </div>
 </div>
 <?php
+}
 }
 }
 }

@@ -9,7 +9,7 @@
 <div class="regionen">
     <?php
     $format = "0"; //bestimt ob Hochformat(0 oder "") oder Querformat(1)
-    $abteil = ""; //Sortirung um auf mehreren bereichen die karte nutzen zu können
+    $abteil = "1"; //Sortirung um auf mehreren bereichen die karte nutzen zu können
     include 'karte.php';
     //reset nicht ändern
     $format = "";
@@ -19,7 +19,7 @@
 <br />
 <?php
 $format = "1"; //bestimt ob Hochformat(0 oder "") oder Querformat(1)
-$abteil = ""; //Sortirung um auf mehreren bereichen die karte nutzen zu können
+$abteil = '2'; //Sortirung um auf mehreren bereichen die karte nutzen zu können
 include 'karte.php';
 //reset nicht ändern
 $format = "";
