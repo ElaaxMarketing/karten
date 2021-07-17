@@ -22,7 +22,7 @@ $zeil = 0;
     $beschreibung = $i[4];
     $bild = $i[5];
     $alt = $i[6];
-    $abt = $i[7];
+    $abt = (string) $i[7];
     if ($zeil == 0)
     {
       $zeil++;
